@@ -1,0 +1,35 @@
+{
+	"name": "lead-manager",
+	"version": "1.0.0",
+	"description": "Simple app for managing leads built with Django Rest Framework API, React and Redux UI",
+	"main": "index.js",
+	"scripts": {
+		"dev": "webpack --mode development --watch ./lead_manager/frontend/src/index.js --output ./lead_manager/frontend/static/frontend/main.js",
+		"build": "webpack --mode production ./lead_manager/frontend/src/index.js --output ./lead_manager/frontend/static/frontend/main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alexscar99/lead-manager.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alexscar99/lead-manager/issues"
+	},
+	"homepage": "https://github.com/alexscar99/lead-manager#readme",
+	"devDependencies": {
+		"@babel/core": "^7.7.2",
+		"@babel/preset-env": "^7.7.1",
+		"@babel/preset-react": "^7.7.0",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {
+		"prop-types": "^15.7.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	}
+}
